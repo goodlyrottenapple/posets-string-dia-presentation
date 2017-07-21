@@ -23,6 +23,7 @@
 
 a rewriting system $(\Sigma , R)$ s.t. $\mathbb{P} = \Sigma^*/\equiv_R$ with $\Sigma = (\Sigma_1 ,\Sigma_2)$, where:
 
+
 * $\Sigma_1 = \{1\}$
 * $\Sigma_2$ contains morphism generators:
 

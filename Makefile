@@ -41,7 +41,7 @@ html:	$(HTML)
 tex:	clean $(TEX)
 
 %.html:	%.md
-	pandoc -r markdown+simple_tables+table_captions+yaml_metadata_block --mathjax --template impress-template.html -V impress-url=impress.js -s -t html5 --section-divs -o $@ $<
+	pandoc -r markdown+simple_tables+table_captions+yaml_metadata_block --mathjax --template impress-template.html -s -t html5 --section-divs -o $@ $<
 	# pandoc -r markdown+simple_tables+table_captions+yaml_metadata_block -w html -S --template=$(PREFIX)/templates/html.template --css=$(PREFIX)/marked/kultiad-serif.css --filter pandoc-citeproc --csl=$(PREFIX)/csl/$(CSL).csl --bibliography=$(BIB) -o $@ $<
 
 # %.tex:	%.md
